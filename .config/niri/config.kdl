@@ -97,10 +97,10 @@ binds {
     Super+Alt+L hotkey-overlay-title="Lock Screen" { spawn "swaylock"; }
 
     // Function row
-    XF86AudioRaiseVolume allow-when-locked=true { spawn "wpctl" "set-sink-volume" "@DEFAULT_SINK@" "+5%"; }
-    XF86AudioLowerVolume allow-when-locked=true { spawn "wpctl" "set-sink-volume" "@DEFAULT_SINK@" "-5%"; }
-    XF86AudioMute allow-when-locked=true { spawn "wpctl" "set-mute" "@DEFAULT_AUDIO_SINK@" "toogle"; }
-    XF86AudioMicMute allow-when-locked=true { spawn "wpctl" "set-mute" "@DEFAULT_AUDIO_SOURCE@" "toogle"; }
+    XF86AudioRaiseVolume allow-when-locked=true { spawn "wpctl" "set-volume" "@DEFAULT_SINK@" "+5%"; }
+    XF86AudioLowerVolume allow-when-locked=true { spawn "wpctl" "set-volume" "@DEFAULT_SINK@" "-5%"; }
+    XF86AudioMute allow-when-locked=true { spawn "wpctl" "set-mute" "@DEFAULT_SINK@" "toogle"; }
+    XF86AudioMicMute allow-when-locked=true { spawn "wpctl" "set-mute" "@DEFAULT_SOURCE@" "toogle"; }
     XF86MonBrightnessUp allow-when-locked=true { spawn "brightnessctl" "set" "5%+"; }
     XF86MonBrightnessDown allow-when-locked=true { spawn "brightnessctl" "set" "5%-"; }
 
