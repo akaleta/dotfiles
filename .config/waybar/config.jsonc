@@ -1,0 +1,52 @@
+{
+    "layer": "top",
+    "height": 30,
+    //"spacing": 4, // Gaps between modules
+
+    "modules-left": [
+        "niri/workspaces"
+    ],
+
+    "modules-center": [
+        "clock",
+    ],
+
+    "modules-right": [
+        "network",
+        "battery",
+    ],
+
+    // ** modules config **//
+    "niri/workspaces": {
+        "format": "{icon}",
+        "format-icons": {
+            "active": "",
+            "default": "",
+        },
+    },
+
+    "clock": {
+        "tooltip": false,
+        "format": "{:%H:%M  -  %A, %d}",
+    },
+
+    "network": {
+        "format-wifi": "",
+        "format-ethernet": "󰈀",
+        "format-disconnected": "󰤠",
+        "tooltip-format": "{essid} ({signalStrength}%)",
+    },
+
+    "battery": {
+        "states": {
+            "warning": 30,
+            "critical": 15,
+        },
+        "format": "{icon} {capacity}%",
+        "format-full": "{icon}",
+        "format-charging": " {capacity}%",
+        "format-plugged": " {capacity}%",
+        "format-alt": "{icon} {time}",
+        "format-icons": ["", "", "", "", ""],
+    }
+}
