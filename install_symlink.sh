@@ -8,6 +8,6 @@ DOTFILES=(
 )
 
 for dotfile in "${DOTFILES[@]}";do
-    ln -sf "${DIR}/${dotfile}" "${HOME}/${dotfile}"
+    ln -sfn "${DIR}/${dotfile}" "${HOME}/${dotfile}"
 
 done
